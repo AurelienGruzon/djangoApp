@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Merchex</title></head>
+    <body>
+        <h1>Hello Django !</h1>
+        <p>Mes groupes préférés sont :</p>
+        {% for band in bands %}
+	{{ band.name }}
+	{% endfor %}
+    </body>
+</html>
