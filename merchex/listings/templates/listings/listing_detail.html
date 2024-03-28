@@ -9,4 +9,8 @@
 <li>Type du bien: {{ listing.get_ltype_display }}</li>
 <li>Groupe associé:<a href=" ">{{ listing.band }}</a></li>
 
+<a href="{% url 'listing-change' listing.id %}">Modifier cet objet</a>
+
+<a href="{% url 'listings' %}">Retourner à la liste des groupes</a>
+
 {% endblock %}

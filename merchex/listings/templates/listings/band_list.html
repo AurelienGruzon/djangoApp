@@ -3,7 +3,11 @@
         <h1>Groupes</h1>
 	<ul>
 	  {% for band in bands %}
-	  <li><a href="{% url 'band-detail' band.id %}">{{ band.name }}</a></li>
+	  <li>
+            <a href="{% url 'band-detail' band.id %}">{{ band.name }}</a>
+            <a href="{% url 'band-change' band.id %}">[modifier]</a>
+	  </li>
 	  {% endfor %}
 	</ul>
+	
 {% endblock %}
