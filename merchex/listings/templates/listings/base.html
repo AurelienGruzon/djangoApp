@@ -7,7 +7,7 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="menu">
       <li><a href="{% url 'band-list' %}">Groupes</a></li>
       <li><a href="{% url 'listings' %}">Objets</a></li>
       <li><a href="{% url 'contact-us' %}">Contact</a></li>
@@ -15,8 +15,9 @@
       <li><a href="{% url 'band-create' %}">Creer Groupe</a></li>
       <li><a href="{% url 'listing-create' %}">Creer Objet</a></li>
     </nav>
- 
+ <div class="block_content">
       {% block content %} {% endblock %}
-
+ </div>
+ 
   </body>
 </html>
